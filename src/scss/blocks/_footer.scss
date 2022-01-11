@@ -1,0 +1,196 @@
+.footer {
+  background-color: $white;
+  padding: 50px 20px;
+
+  &__holder {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+      @include respond-to('desktop') { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;  
+        padding: 0 40px;    
+      }
+  }
+
+  &__block {
+    max-width: calc(100% / 3);
+
+    .about-item {
+      color: $blue-logo;
+
+      &__link {
+        display: block;
+        color: $blue-logo;
+        padding: 10px;
+
+        &:hover i {
+          color: $white;
+          background-color: $blue-logo;
+          border-radius: 50%;
+        }
+
+        i {
+          padding: 10px;
+          margin-right: 10px;
+
+
+        }
+      }
+    }
+
+    &_about {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+    }
+
+    &_logo {
+      @include respond-to('desktop') { 
+        margin-right: 180px;   
+      }
+
+      i {
+        padding: 10px;
+      }
+    }
+
+    &__copyright {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_social {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+
+
+      @include respond-to('desktop') { 
+        font-size: 20px;    
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 60%;
+  }
+
+  &__social-item {
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  &__social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px; 
+    font-size: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+
+    &:hover {
+      border: $white;
+
+      i {    
+        color: $white;
+        transform: rotateY(360deg);
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // background: #f00;
+      transition: .5s;
+      z-index: 2;
+    }
+
+    &:hover:before {
+      top: 0;
+    }
+
+    i {
+      position: relative;
+      transition: .5s;
+      z-index: 3;
+    }
+
+    &_youtube {
+      color: $youtube;
+      border: 2px solid $youtube;
+
+      &:before {
+        color: $white;
+        background: $youtube;
+
+      }
+    }
+
+    &_vk {
+      font-size: 13px;
+      color: $vk;
+      border: 2px solid $vk;
+
+      &:before {
+        background: $vk;
+      }
+    }
+
+    &_telegram {
+      font-size: 17px;
+      color: $telegram;
+      border: 2px solid $telegram;
+      padding-right: 3px;
+
+      &:before {
+        background: $telegram;
+      }
+    }
+
+    &_instagram {
+      color: $instagram;
+      border: 2px solid $instagram;      
+
+      &:before {
+        background: $instagram;
+      }
+    }
+
+    &_twitter {
+      color: $twitter;
+      border: 2px solid $twitter;
+      padding-left: 2px;
+
+      &:before {
+        background: $twitter;
+      }
+    }
+    
+    &_facebook {
+      color: $facebook;
+      border: 2px solid $facebook;
+
+      &:before {
+        background: $facebook;
+      }
+    }
+  }
+}

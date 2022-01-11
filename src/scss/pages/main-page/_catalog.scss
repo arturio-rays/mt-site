@@ -1,0 +1,340 @@
+.catalog {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, .1) url(../img/mt-catalog.jpg) no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.9); 
+  background-size: cover;  
+  min-height: 70vh;
+  padding: 50px;
+
+  &__slide {
+      max-width: 100%;
+  }
+
+  &__top-row {
+      display: flex;
+      flex-wrap: wrap;
+
+      @include respond-to('desktop') {        
+          justify-content: space-between;
+          align-items: center;
+          padding: 40px 0;
+      }
+  }
+
+  &__bottom-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 0;
+  }
+
+  &__logo {   
+      display: block;
+      max-width: 50%;
+      color: rgba(255,255,255,.6); 
+      font-size: 20px;
+      text-align: center;
+      width: calc(100% / 3);
+      font-size: 50px;
+
+      :hover {
+          font-size: 115%;
+          transition: all ease-in-out .2s;
+      }
+
+
+      &_samsung {
+          font-size: 40px;
+
+          :hover {
+              color: $samsung;
+          }
+      }
+
+      &_xiaomi {
+          font-size: 55px;
+
+          :hover {
+              color: $white;
+              border-radius: 40%;
+              padding: 40px 26px;
+              background-color: $xiaomi;
+          }
+      }
+
+      &_apple {
+          font-size: 95px;
+          padding-bottom: 25px;
+
+          :hover {
+              color: rgba(255,255,255,1);
+          }
+      }
+
+      &_honor {
+          font-size: 50px;
+
+          :hover {
+              color: $honor;
+          }
+      }
+
+      &_realme {
+          font-size: 65px;
+          padding-bottom: 15px;
+
+          :hover {
+              color: $realme;
+          }
+      }
+
+
+      &_vivo {
+          font-size: 50px;
+          padding-bottom: 20px;
+
+          :hover {
+              color: $vivo;
+          }
+      }
+
+      &_oppo {
+          font-size: 50px;
+
+          :hover {
+              color: $oppo;
+          }
+      }
+
+      &_oneplus {
+          font-size: 80px;
+
+          :hover {
+              color: $oneplus;
+          }
+      }
+
+      &_redmi {
+          font-size: 50px;
+
+          :hover {
+              color: $redmi;
+          }
+      }
+
+      &_poco {
+          font-size: 45px;
+
+          i {
+              padding: 50px 40px;
+          }
+
+
+          :hover {
+              color: $black;
+              background-color: $poco;
+          }
+      }
+
+      &_huawei {
+
+          .icon-huawei {
+              font-size: 70px;
+              padding-top: 7px;
+              margin-bottom: 25px;
+          }
+
+          .icon-huawei-2 {
+              font-size: 30px;
+          }
+
+          :hover {
+              color: rgba(255,255,255,1);
+
+              .icon-huawei {
+                  color: $huawei;
+              }
+          }
+      }
+
+      &_meizu {
+          font-size: 40px;
+
+          :hover {
+              color: $meizu;
+          }
+      }
+
+      &_motorola {          
+          
+          .icon-motorola {
+              font-size: 75px;
+              margin-bottom: 10px;
+          }
+
+          .icon-motorola-2 {
+              font-size: 40px;
+          }
+          
+          :hover {
+              color: $white;
+          }
+      }
+
+      &_nokia {
+          font-size: 40px;
+
+          :hover {
+              color: $nokia;
+          }
+      }
+
+      &_sony {
+          font-size: 40px;
+
+          :hover {
+              color: $sony;
+          }
+      }
+
+      &_asus {
+          font-size: 50px;
+
+          :hover {
+              color: $asus;
+          }
+      }
+
+      &_blackshark {
+          font-size: 75px;
+          padding-bottom: 12px;
+
+          :hover {
+              color: $blackshark;
+          }
+      }
+
+      &_iqoo {
+          font-size: 50px;
+
+          :hover {
+              color: $iqoo;
+          }
+      }
+
+      &_zte {
+          font-size: 50px;
+
+          :hover {
+              color: $zte;
+          }
+      }
+
+      &_google {
+          font-size: 70px;
+
+          :hover {
+              color: $google;
+          }
+      }
+  } 
+
+  &__icon-holder {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  &__slider-holder {
+      position: relative;
+  }
+
+  &__arrow {
+      position: absolute;
+      top: 50%;
+      color: rgba(255,255,255,.6);
+      font-size: 30px;
+      padding: 15px;
+      cursor: pointer;
+
+      &:hover {
+          color: rgba(255,255,255,1);
+      }
+
+      &_next-arrow {
+          right: -20px;
+      }
+
+      &_prev-arrow {
+          left: -20px;
+      }
+  }
+
+  .slick-dots {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none;
+      position: absolute;
+      top: 100%;
+      transform: translate(-50%, 0);
+      left: 50%;
+      margin: 0;
+      padding: 0;
+  }
+  .slick-dots li {
+      margin: 0 8px;
+  }
+
+  .slick-dots li button {
+      width: 10px;
+      height: 10px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      font-size: 0;
+      background: transparent;
+  }
+
+  .slick-dots .slick-active button {
+      background: #fff;
+  }  
+
+  &__button {
+      position: absolute;
+      bottom: 30px;
+      right: 0;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 15px; 
+      margin-right: -120px;  
+      
+      &:hover { 
+          background-color: rgba(255,255,255,.1); 
+          transition: all ease-in-out .4s;
+          margin-right: 0;
+      }
+  }
+
+  &__button-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $white;
+      border: 2px solid rgba(255,255,255,.6); 
+      border-radius: 10px 0 0 10px;
+      padding: 15px;
+
+      i {
+          font-size: 30px; 
+          margin-right: 20px;            
+      }
+
+      &:hover {
+          border: 2px solid rgba(255,255,255,1); 
+          transition: all ease-in-out .2s;
+      }
+
+  }
+}

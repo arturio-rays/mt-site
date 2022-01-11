@@ -1,0 +1,187 @@
+.blog {
+  
+  .container {
+      background-color: $light-grey;
+  }
+
+  &__row {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  &__holder {
+    max-width: 100%;
+
+        @include respond-to('desktop') { 
+        max-width: 77%;
+        }
+    }
+
+  &__main-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 -10px 30px;
+  }
+
+  &__item {
+    width: 100%;
+    background-color: $white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 10px 20px;
+
+        @include respond-to('desktop') { 
+            width: calc(100% / 2 - 20px);
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: all ease-in-out .3s; 
+            cursor: pointer;           
+        }
+    }
+  }
+
+  &__card {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  &__title-holder {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      color: $black;
+  }
+
+  &__title {
+      font-size: 18px;
+  }
+
+  &__preview {
+      color: rgba(0,0,0,.7);
+      padding: 10px 0;
+  }
+
+  &__stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      color: rgba(0,0,0,.5);
+  }
+
+  &__sidebar {       
+      max-width: 23%;
+      padding: 0 0 0 20px;
+  }
+
+  &__button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
+}
+
+.social {
+  padding: 15px 0;
+
+  &__item {
+
+      &:first-child {
+          color: $white;
+          background-color: $blue-logo;
+          border-radius: 15px;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 17px 0;
+          margin-bottom: 10px;
+      }
+  }
+
+  &__name {
+      display: flex;
+      align-items: center;
+
+      i {
+          margin-right: 10px;
+      }
+      
+  }
+
+  &__link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;       
+      width: 100%;
+      border-radius: 15px;
+      padding: 15px;   
+      margin-bottom: 10px;
+
+      &_youtube {
+          color: $youtube;
+          border: 1px solid $youtube;
+
+          &:hover {
+              color: $white;
+              background-color: $youtube;
+          }
+      }
+
+      &_vk {
+          color: $vk;
+          border: 1px solid $vk;
+
+          i {
+              font-size: 10px;
+          }
+
+          &:hover {
+              color: $white;
+              background-color: $vk;
+          }
+      }
+
+      &_telegram {
+          color: $telegram;
+          border: 1px solid $telegram;
+
+          &:hover {
+              color: $white;
+              background-color: $telegram;
+          }
+      } 
+
+      &_instagram {
+          color: $instagram;
+          border: 1px solid $instagram;
+
+          &:hover {
+              color: $white;
+              background-color: $instagram;
+          }
+      } 
+
+      &_twitter {
+          color: $twitter;
+          border: 1px solid $twitter;
+
+          &:hover {
+              color: $white;
+              background-color: $twitter;
+          }
+      } 
+
+      &_facebook {
+          color: $facebook;
+          border: 1px solid $facebook;
+
+          &:hover {
+              color: $white;
+              background-color: $facebook;
+          }
+      }        
+  }
+}

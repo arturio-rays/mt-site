@@ -1,0 +1,16 @@
+@import "variables";
+@import "reset";
+@import "fonts";
+@import "icons";
+@import "mixins";
+@import "common";
+@import "ads";
+
+@import "blocks/header";
+@import "pages/main-page/news";
+@import "pages/main-page/catalog";
+@import "pages/main-page/reviews";
+@import "pages/main-page/videos";
+@import "pages/main-page/discounts";
+@import "pages/main-page/blog";
+@import "blocks/footer";

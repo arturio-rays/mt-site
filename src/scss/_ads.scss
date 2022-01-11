@@ -1,0 +1,121 @@
+.main-banner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mobile-banner-top.jpg);
+  // background-size: cover;
+  background-repeat: no-repeat;
+  
+  a {
+      display: block;
+      width: 100%;
+      min-height: 100vh; 
+  }  
+
+  @include respond-to('desktop') {  
+      background-image: url(../img/ad_banner_main.jpg);
+      background-position: center top;
+      background-repeat: no-repeat;
+  }
+ 
+
+         
+  // }
+  // position: fixed;
+  // width: 100%;
+  // height: 100%;
+  // background-image: url(../img/ad_banner_main.jpg);
+  // background-position: center top;
+  // background-repeat: no-repeat;
+
+  // a {
+  //   display: block;
+  //   width: 100%;
+  //   min-height: 100vh; 
+  // }
+}
+
+.block-ads {
+  width: 100%;
+  height: 90px;
+  padding-bottom: 15px;
+
+  a {
+      display: block;
+      background: url(../img/header-ads.jpg) no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%; 
+  }
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px;
+
+  &_partner {
+      justify-content: center;
+      background-color: #415fff;  
+  }
+
+  &_discounts {
+      color: $white;
+      background-color: $mt-discounts;
+
+      a {
+          width: 100%;
+      }
+  }
+}
+
+.partner-logo {
+  color: $white;
+  font-size: 50px;
+}
+
+.sidebar-banner {
+  // width: 100%;
+
+  &_news {
+      height: 450px;
+
+      a {
+          background: url(../img/ad_banner-1.jpg) no-repeat;
+          display: block;
+          background-size: cover;
+          border-radius: 10px;
+          width: 100%;
+          height: 100%; 
+      }
+  }
+
+  &_reviews {
+      height: 523px;
+
+      a {
+          background: url(../img/ad_banner-2.jpg) no-repeat;
+          display: block;
+          background-size: cover;
+          border-radius: 10px;
+          width: 100%;
+          height: 100%; 
+      }
+  }
+}
+
+.discounts__ads {
+  width: 100%;
+  height: 180px;
+
+  a {
+      display: block;
+      background: url(../img/discounts-ads.jpg);
+      background-size: cover;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%; 
+  }
+}

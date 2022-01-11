@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'fontawesome';
+  src:  url('../fonts/icon/fontawesome.eot?9g54pf');
+  src:  url('../fonts/icon/fontawesome.eot?9g54pf#iefix') format('embedded-opentype'),
+    url('../fonts/icons/fontawesome.ttf?9g54pf') format('truetype'),
+    url('../fonts/icons/fontawesome.woff?9g54pf') format('woff'),
+    url('../fonts/icons/fontawesome.svg?9g54pf#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fontawesome' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-blackshark:before {
+  content: "\e90d";
+}
+.icon-motorola:before {
+  content: "\e919";
+}
+.icon-mt_menu-logo .path1:before {
+  content: "\e907";
+  color: rgb(33, 150, 230);
+}
+.icon-mt_menu-logo .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(178, 178, 178);
+}
+.icon-mt_menu-logo .path3:before {
+  content: "\e907";
+  color: $mt-news;
+}
+.icon-mt_menu-logo .path4:before {
+  content: "\e907";
+  color: $mt-catalog;
+}
+.icon-mt_menu-logo .path5:before {
+  content: "\e907";
+  color: $mt-video;
+}
+.icon-mt_menu-logo .path6:before {
+  content: "\e907";
+  color: $mt-discounts;
+}
+.icon-mt_menu-logo .path7:before {
+  content: "\e907";
+  color: $mt-blog;
+}
+.icon-vk:before {
+  content: "\e909";
+}
+.icon-huawei:before {
+  content: "\e90a";
+}
+.icon-meizu:before {
+  content: "\e90b";
+}
+.icon-nokia:before {
+  content: "\e917";
+}
+.icon-sony:before {
+  content: "\e918";
+}
+.icon-oneplus:before {
+  content: "\e902";
+}
+.icon-oppo:before {
+  content: "\e903";
+}
+.icon-poco:before {
+  content: "\e904";
+}
+.icon-redmi:before {
+  content: "\e905";
+}
+.icon-vivo:before {
+  content: "\e906";
+}
+.icon-asus:before {
+  content: "\e90c";
+}
+.icon-google:before {
+  content: "\e90e";
+}
+.icon-iqoo:before {
+  content: "\e90f";
+}
+.icon-zte:before {
+  content: "\e910";
+}
+.icon-apple:before {
+  content: "\e911";
+}
+.icon-honor:before {
+  content: "\e912";
+}
+.icon-realme:before {
+  content: "\e913";
+}
+.icon-samsung:before {
+  content: "\e914";
+}
+.icon-xiaomi:before {
+  content: "\e915";
+}
+.icon-huawei-2:before {
+  content: "\e900";
+}
+.icon-motorola-2:before {
+  content: "\e901";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-user:before {
+  content: "\f007";
+}
+.icon-home:before {
+  content: "\f015";
+}
+.icon-play:before {
+  content: "\f04b";
+}
+.icon-arrow-left:before {
+  content: "\f053";
+}
+.icon-arrow-right:before {
+  content: "\f054";
+}
+.icon-arrow-up:before {
+  content: "\f062";
+}
+.icon-expand:before {
+  content: "\f065";
+}
+.icon-eye:before {
+  content: "\f06e";
+}
+.icon-chevron-up:before {
+  content: "\f077";
+}
+.icon-arrow-down:before {
+  content: "\f078";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-group:before {
+  content: "\f0c0";
+}
+.icon-users:before {
+  content: "\f0c0";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-comment:before {
+  content: "\f0e5";
+}
+.icon-comments:before {
+  content: "\f0e6";
+}
+.icon-youtube:before {
+  content: "\f16a";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-telegram:before {
+  content: "\f1d8";
+}
+.icon-bomb:before {
+  content: "\f1e2";
+}
+.icon-copyright:before {
+  content: "\f1f9";
+}
+.icon-hashtag:before {
+  content: "\f292";
+}
+.icon-handshake:before {
+  content: "\f2b5";
+}

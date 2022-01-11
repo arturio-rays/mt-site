@@ -1,0 +1,158 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    :focus {
+      border: $light-grey;
+    }
+  }
+  
+  
+  .container {
+    width: 100%;
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+    
+  .content {
+    position: relative;
+    top: 180px;
+  }
+
+  .chapter {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    &_news {
+      color: $mt-news;
+    }
+
+    &_catalog {
+      color: $mt-catalog;
+    }
+
+    &_reviews {
+      color: $mt-reviews;
+    }
+    
+    &_video {
+      color: $mt-video;
+    }
+
+    &_discounts {
+      color: $mt-discounts;
+    }
+
+    &_blog {
+      color: $mt-blog;
+    }
+  }
+
+  .btn {
+    display: block;
+    color: $blue-logo;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid $blue-logo;
+    border-radius: 20px;
+    padding: 15px 60px;
+    margin-bottom: 50px;
+    width: 32%;
+
+    &:hover {
+        color: $white;
+        background-color: $blue-logo;
+        transition: background ease-in-out .2s;
+    }
+}
+
+.partition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+
+  &__title-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__tag-list {
+    overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+      @include respond-to('desktop') { 
+        overflow: visible;   
+      }
+  }
+
+  &__tag-item { 
+
+    &:hover {
+      border: 2px solid $black;
+      border-radius: 20px;  
+      transition: border ease-in .1s;   
+    }
+  }
+
+  &__tag-link {
+    display: block;
+    color: $black;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 10px;
+
+    &_hot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    img {
+      width: 18px;
+      padding-left: 5px;
+    }    
+  }
+}
+
+.return-btn {
+  position: fixed;
+  left: 135px;
+  bottom: 25px;
+
+    :hover {
+      color: rgba(255,255,255,.7);
+      background-color: rgba(0, 0, 0, .6);
+    }
+
+  &__link {
+    font-size: 20px;
+    color: rgba(255,255,255,.6);
+    background-color: rgba(0, 0, 0, .1);
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+}
+
+aside {
+  display: none;
+
+    @include respond-to('desktop') {
+      display: block;       
+  }
+}
